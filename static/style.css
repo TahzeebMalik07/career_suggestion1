@@ -1,0 +1,310 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* CSS for Hidden Class */
+.hidden {
+    display: none;
+}
+
+
+/* interest page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .container h1 {
+    margin-bottom: 10px;
+  }
+  
+  .container p {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    justify-items: stretch;
+  }
+  
+  form label {
+    background-color: #ddd;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  form label:hover {
+    background-color: #ccc;
+  }
+  
+  form input[type="checkbox"] {
+    transform: scale(1.2);
+  }
+  
+  button[type="submit"] {
+    grid-column: span 2;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  /* result page ka lia */
+  
+  body.results-background {
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px 20px 20px; 
+    box-sizing: border-box;
+}
+.result-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+h3 {
+    color: #555;
+    margin-top: 30px;
+    font-size: 22px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #e8f0fe;
+    margin: 10px auto;
+    padding: 12px 18px;
+    border-radius: 6px;
+    width: 80%;
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a button {
+    background-color: #28a745;
+    margin-top: 10px;
+}
+
+a button:hover {
+    background-color: #218838;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* welcome page ka lia  */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('static/images/background3.jpg'); /* Add your background image here */
+    background-size: cover;  /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4CAF50; 
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #da1c1c;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049; 
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
+

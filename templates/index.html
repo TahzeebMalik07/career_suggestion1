@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / SignUp | Career Suggestion</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script>
+        // Toggle between Login and Signup forms
+        function toggleForm() {
+            const loginForm = document.getElementById('login-form');
+            const signupForm = document.getElementById('signup-form');
+            loginForm.classList.toggle('hidden');
+            signupForm.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Career Suggestion</h1>
+
+        <!-- Login Form -->
+        <div id="login-form" class="form-container">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="javascript:void(0);" onclick="toggleForm()">Sign Up</a></p>
+        </div>
+
+        <!-- SignUp Form -->
+        <div id="signup-form" class="form-container hidden">
+            <h2>Sign Up</h2>
+            <form action="/signup" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="javascript:void(0);" onclick="toggleForm()">Log In</a></p>
+        </div>
+    </div>
+</body>
+</html>

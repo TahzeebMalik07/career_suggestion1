@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Suggestions</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="result-container">
+        <h1></h1>
+        <h2>Random Forest Model Predictions:</h2>
+        <ul>
+            {% for career in rf_predictions %}
+            <li>{{ career }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>AdaBoost Model Predictions:</h2>
+        <ul>
+            {% for career in ada_predictions %}
+            <li>{{ career }}</li>
+            {% endfor %}
+        </ul>
+
+        {% if common_predictions %}
+        <h2>Common Career Predictions from Both Models:</h2>
+        <ul>
+            {% for career in common_predictions %}
+            <li>{{ career }}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No common predictions found between both models.</p>
+        {% endif %}
+
+        <br>
+        <!-- Go Back button to reload the page -->
+        <button onclick="goBack()">Go Back</button>
+
+        <a href="https://collegedunia.com/?utm_source=chatgpt.com" target="_blank">
+            <button style="margin-top: 20px; background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                Choose College
+            </button>
+        </a>
+    </div>
+
+    <!-- JavaScript to reload the page -->
+    <script>
+        function goBack() {
+            localStorage.removeItem("careerResults"); // optional, only if using localStorage
+            window.location.href = "/interests"; // ✅ Correct: redirects to interest selection page
+        }
+    </script>
+    
+</body>
+</html>

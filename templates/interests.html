@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Your Interests</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script>
+      function validateForm() {
+        // Get all checkboxes
+        var checkboxes = document.querySelectorAll('input[name="interests"]:checked');
+        
+        // Check if at least one checkbox is selected
+        if (checkboxes.length === 0) {
+          alert("Please select at least one interest.");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Select Your Interests</h1>
+      <form method="POST" onsubmit="return validateForm()">
+        <!-- Interests List -->
+        <label><input type="checkbox" name="interests" value="Drawing"> Drawing</label><br>
+        <label><input type="checkbox" name="interests" value="Dancing"> Dancing</label><br>
+        <label><input type="checkbox" name="interests" value="Singing"> Singing</label><br>
+        <label><input type="checkbox" name="interests" value="Sports"> Sports</label><br>
+        <label><input type="checkbox" name="interests" value="Video_Game"> Video Game</label><br>
+        <label><input type="checkbox" name="interests" value="Acting"> Acting</label><br>
+        <label><input type="checkbox" name="interests" value="Travelling"> Travelling</label><br>
+        <label><input type="checkbox" name="interests" value="Gardening"> Gardening</label><br>
+        <label><input type="checkbox" name="interests" value="Animals"> Animals</label><br>
+        <label><input type="checkbox" name="interests" value="Photography"> Photography</label><br>
+        <label><input type="checkbox" name="interests" value="Teaching"> Teaching</label><br>
+        <label><input type="checkbox" name="interests" value="Exercise"> Exercise</label><br>
+        <label><input type="checkbox" name="interests" value="Coding"> Coding</label><br>
+        <label><input type="checkbox" name="interests" value="Electricity_Components"> Electricity Components</label><br>
+        <label><input type="checkbox" name="interests" value="Mechanic_Parts"> Mechanic Parts</label><br>
+        <label><input type="checkbox" name="interests" value="Computer_Parts"> Computer Parts</label><br>
+        <label><input type="checkbox" name="interests" value="Researching"> Researching</label><br>
+        <label><input type="checkbox" name="interests" value="Architecture"> Architecture</label><br>
+        <label><input type="checkbox" name="interests" value="Historic_Collection"> Historic Collection</label><br>
+        <label><input type="checkbox" name="interests" value="Botany"> Botany</label><br>
+        <label><input type="checkbox" name="interests" value="Zoology"> Zoology</label><br>
+        <label><input type="checkbox" name="interests" value="Physics"> Physics</label><br>
+        <label><input type="checkbox" name="interests" value="Accounting"> Accounting</label><br>
+        <label><input type="checkbox" name="interests" value="Economics"> Economics</label><br>
+        <label><input type="checkbox" name="interests" value="Sociology"> Sociology</label><br>
+        <label><input type="checkbox" name="interests" value="Geography"> Geography</label><br>
+        <label><input type="checkbox" name="interests" value="Psychology"> Psychology</label><br>
+        <label><input type="checkbox" name="interests" value="History"> History</label><br>
+        <label><input type="checkbox" name="interests" value="Science"> Science</label><br>
+        <label><input type="checkbox" name="interests" value="Business_Education"> Business Education</label><br>
+        <label><input type="checkbox" name="interests" value="Chemistry"> Chemistry</label><br>
+        <label><input type="checkbox" name="interests" value="Mathematics"> Mathematics</label><br>
+        <label><input type="checkbox" name="interests" value="Biology"> Biology</label><br>
+        <label><input type="checkbox" name="interests" value="Makeup"> Makeup</label><br>
+        <label><input type="checkbox" name="interests" value="Designing"> Designing</label><br>
+        <label><input type="checkbox" name="interests" value="Content_Writing"> Content Writing</label><br>
+        <label><input type="checkbox" name="interests" value="Crafting"> Crafting</label><br>
+        <label><input type="checkbox" name="interests" value="Literature"> Literature</label><br>
+        <label><input type="checkbox" name="interests" value="Reading"> Reading</label><br>
+        <label><input type="checkbox" name="interests" value="Cartooning"> Cartooning</label><br>
+        <label><input type="checkbox" name="interests" value="Debating"> Debating</label><br>
+        <label><input type="checkbox" name="interests" value="Astrology"> Astrology</label><br>
+        <label><input type="checkbox" name="interests" value="Hindi"> Hindi</label><br>
+        <label><input type="checkbox" name="interests" value="French"> French</label><br>
+        <label><input type="checkbox" name="interests" value="English"> English</label><br>
+        <label><input type="checkbox" name="interests" value="Urdu"> Urdu</label><br>
+        <label><input type="checkbox" name="interests" value="Other_Language"> Other Language</label><br>
+        <label><input type="checkbox" name="interests" value="Solving_Puzzles"> Solving Puzzles</label><br>
+        <label><input type="checkbox" name="interests" value="Gymnastics"> Gymnastics</label><br>
+        <label><input type="checkbox" name="interests" value="Yoga"> Yoga</label><br>
+        <label><input type="checkbox" name="interests" value="Engineering"> Engineering</label><br>
+        <label><input type="checkbox" name="interests" value="Doctor"> Doctor</label><br>
+        <label><input type="checkbox" name="interests" value="Pharmacist"> Pharmacist</label><br>
+        <label><input type="checkbox" name="interests" value="Cycling"> Cycling</label><br>
+        <label><input type="checkbox" name="interests" value="Knitting"> Knitting</label><br>
+        <label><input type="checkbox" name="interests" value="Director"> Director</label><br>
+        <label><input type="checkbox" name="interests" value="Journalism"> Journalism</label><br>
+        <label><input type="checkbox" name="interests" value="Business"> Business</label><br>
+        <label><input type="checkbox" name="interests" value="Listening_to_Music"> Listening to Music</label><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
