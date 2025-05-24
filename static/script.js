@@ -1,5 +1,3 @@
-// index page js
-
 const form = document.getElementById('interest-form');
 
 form.addEventListener('submit', async function(event) {

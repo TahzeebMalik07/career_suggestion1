@@ -1,310 +1,673 @@
-body {
+/* Apply background image only to index page */
+body.index-page {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('/static/images/background1.jpg.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
-.container {
+/* Apply container styles only to index page */
+body.index-page .container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
     text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 2rem;
-    color: #333;
-}
-
-p {
-    color: #555;
+/* Apply heading styles only to index page */
+body.index-page h1 {
+    color: #2c3e50;
     margin-bottom: 20px;
 }
 
-.form-container {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+body.index-page h2 {
+    color: #34495e;
+    margin-bottom: 15px;
 }
 
-input {
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    width: 80%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-h2 {
-    color: #333;
-    font-size: 1.5rem;
-}
-
-label {
+/* Form container style */
+body.index-page .form-container {
     display: block;
-    margin-bottom: 10px;
 }
 
-
-/* CSS for Hidden Class */
-.hidden {
+body.index-page .hidden {
     display: none;
 }
 
-
-/* interest page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 40px auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .container h1 {
-    margin-bottom: 10px;
-  }
-  
-  .container p {
-    margin-bottom: 25px;
-    font-size: 16px;
-  }
-  
-  form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    max-height: 70vh;
-    overflow-y: auto;
-    padding-right: 10px;
-    padding-left: 10px;
-    justify-items: stretch;
-  }
-  
-  form label {
-    background-color: #ddd;
-    padding: 12px 16px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-align: left;
+/* Form styles */
+body.index-page form {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    transition: background-color 0.3s;
-    cursor: pointer;
-  }
-  
-  form label:hover {
-    background-color: #ccc;
-  }
-  
-  form input[type="checkbox"] {
-    transform: scale(1.2);
-  }
-  
-  button[type="submit"] {
-    grid-column: span 2;
-    padding: 12px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-
-  /* result page ka lia */
-  
-  body.results-background {
-    background-color: #f4f4f9;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 40px 20px 20px 20px; 
-    box-sizing: border-box;
-}
-.result-container {
-    max-width: 700px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 30px 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
 }
 
-h1 {
-    font-size: 32px;
-    margin-bottom: 25px;
-    color: #222;
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 26px;
-}
-
-h3 {
+/* Label styles */
+body.index-page label {
+    text-align: left;
+    margin-top: 10px;
     color: #555;
-    margin-top: 30px;
-    font-size: 22px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+    font-weight: bold;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 0;
+/* Input styles */
+body.index-page input[type="text"],
+body.index-page input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
 }
 
-ul li {
-    background-color: #e8f0fe;
-    margin: 10px auto;
-    padding: 12px 18px;
-    border-radius: 6px;
-    width: 80%;
-    color: #333;
-    font-weight: 500;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+body.index-page input:focus {
+    border-color: #007BFF;
 }
 
-button {
-    margin-top: 20px;
-    background-color: #007bff;
+/* Button styles */
+body.index-page button {
+    background-color: #007BFF;
     color: white;
-    padding: 12px 24px;
     border: none;
-    border-radius: 6px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+body.index-page button:hover {
     background-color: #0056b3;
 }
 
-a button {
-    background-color: #28a745;
-    margin-top: 10px;
+/* Link styles */
+body.index-page p a {
+    color: #007BFF;
+    text-decoration: none;
 }
 
-a button:hover {
-    background-color: #218838;
+body.index-page p a:hover {
+    text-decoration: underline;
 }
 
-* {
+
+
+/* Welcome page specific CSS */
+/* Apply styles only to welcome page */
+body.welcome-page {
+    font-family: Arial, sans-serif;
+    background: url('/static/images/welcomebackground3.jpg.png') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* welcome page ka lia  */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-    padding: 20px;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('static/images/background3.jpg'); /* Add your background image here */
-    background-size: cover;  /* Ensure the image covers the entire background */
-    background-position: center; /* Center the background image */
+    height: 100vh;
+    color: #fff;
 }
 
-.container {
-    background-color: white;
-    border-radius: 8px;
-    padding: 30px;
+/* Shadow only for Welcome page container */
+body.welcome-page .container {
+    background-color: rgba(0, 0, 0, 0.7);  /* Dark background with transparency */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow */
+    padding: 40px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
 }
 
-h1 {
-    font-size: 2rem;
-    color: #4CAF50; 
+/* Welcome page specific styles for heading and button */
+body.welcome-page h1 {
+    color: #fff;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 1.1rem;
-    color: #da1c1c;
+body.welcome-page p {
+    color: #fff;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    text-decoration: none;
-    background-color: #4CAF50;
+body.welcome-page .btn {
+    background-color: #007BFF;
     color: white;
+    padding: 15px 25px;
+    text-decoration: none;
     border-radius: 5px;
+    font-size: 1.2em;
     transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
-.btn:hover {
-    background-color: #45a049; 
+body.welcome-page .btn:hover {
+    background-color: #0056b3;
 }
 
-@media (max-width: 600px) {
-    .container {
-        padding: 20px;
-    }
+/* result page ka lia */
 
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .btn {
-        padding: 8px 16px;
-        font-size: 1rem;
-    }
+body.result-page {
+    font-family: Arial, sans-serif;
+    background: url('/static/images/background2.jpg.png') no-repeat center center fixed; /* Fixed background */
+    background-size: cover; /* Cover the entire page */
+    background-attachment: fixed; /* Prevent the image from scrolling */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    color: #333;
 }
 
+
+.result-page .result-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+.result-page h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.result-page h2 {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+
+.result-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result-page li {
+    background: #dff0d8;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+
+.result-page button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.result-page button:hover {
+    background-color: #0056b3;
+}
+
+.result-page button.choose-college {
+    background-color: #4CAF50;
+}
+
+.result-page button.choose-college:hover {
+    background-color: #45a049;
+}
+
+
+/* interest page ka lia  */
+body.interest-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f0f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#interest-page .container {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 960px;
+    width: 100%;
+    text-align: center;
+}
+
+#interest-page h1 {
+    margin-bottom: 0.5rem;
+}
+
+#interest-page p {
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+#interest-page .interest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+#interest-page .interest-item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#interest-page .interest-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#interest-page .interest-item input[type="checkbox"] {
+    display: none;
+}
+
+#interest-page .interest-item img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+#interest-page .interest-item span {
+    display: block;
+    font-size: 0.8rem;
+    padding: 4px 0;
+    color: #333;
+}
+
+#interest-page .interest-item input[type="checkbox"]:checked + label {
+    background-color: #d0eaff;
+    border: 2px solid #007bff;
+}
+
+#interest-page button {
+    margin-top: 2rem;
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#interest-page button:hover {
+    background: linear-gradient(90deg, #0056b3, #009ec3);
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.interest-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.interest-box:hover {
+    transform: scale(1.03);
+}
+
+.interest-box input[type="checkbox"] {
+    margin-top: 10px;
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.interest-label {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+/* Interests Page Styling - Only applies when body has class 'interests-page' */
+
+.interests-page .container h1,
+.interests-page .container button {
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+}
+
+.interests-page .container button {
+  background-color: #007BFF; /* Bootstrap blue */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.interests-page .container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+  
+  /* Sample Backgrounds */
+.drawing {
+    background-image: url('images/drawing.jpg');
+}
+
+.dancing {
+    background-image: url('images/dancing.jpg');
+}
+
+.singing {
+    background-image: url('images/singing.jpg');
+}
+
+.sports {
+    background-image: url('images/sports.jpg');
+}
+
+.video-game {
+    background-image: url('/static/images/videogame.jpg');
+  }
+  
+
+.acting {
+    background-image: url('images/acting.jpg');
+}
+
+.travelling {
+    background-image: url('images/travelling.jpg');
+}
+
+.gardening {
+    background-image: url('images/gardening.jpg');
+}
+
+.animals {
+    background-image: url('images/animals.jpg');
+}
+
+.photography {
+    background-image: url('images/photography.jpg');
+}
+
+.teaching {
+    background-image: url('images/teaching.jpg');
+}
+
+.exercise {
+    background-image: url('images/exercise.jpg');
+}
+.coding {
+    background-image: url('images/coding.jpg');
+}
+
+.electricity-components {
+    background-image: url('images/electricity-components.jpg');
+}
+
+.mechanic-parts {
+    background-image: url('images/mechanic-parts.jpg');
+}
+.computer-parts {
+    background-image: url('images/computer-parts.jpg');
+}
+
+.researching {
+    background-image: url('images/researching.jpg');
+}
+
+.architecture {
+    background-image: url('images/architecture.jpg');
+}
+
+.historic-collection {
+    background-image: url('images/historic-collection.jpg');
+}
+    
+.botany {
+    background-image: url('images/botany.jpg');
+}
+
+.zoology {
+    background-image: url('images/zoology.jpg');
+}
+
+
+.physics {
+    background-image: url('images/physics.jpg');
+}
+.accounting {
+    background-image: url('images/accounting.jpg');
+}
+
+.economics{
+    background-image: url('images/economics.jpg');
+}
+
+
+.sociology{
+    background-image: url('images/sociology.jpg');
+}
+
+.geography{
+    background-image: url('images/geography.jpg');
+}
+
+.psychology {
+    background-image: url('images/psychology.jpg');
+}
+
+.history {
+    background-image: url('images/history.jpg');
+}
+
+.science {
+    background-image: url('images/science.jpg');
+}
+
+.business-education {
+    background-image: url('images/business-education.jpg');
+}
+
+
+.chemistry {
+    background-image: url('images/chemistry.jpg');
+}
+
+.mathematics {
+    background-image: url('images/mathematics.jpg');
+}
+
+
+.biology {
+    background-image: url('images/biology.jpg');
+}
+
+
+.makeup {
+    background-image: url('images/makeup.jpg');
+}
+
+.designing {
+    background-image: url('images/designing.jpg');
+}
+
+
+.content-writing {
+    background-image: url('images/content-writing.jpg');
+}
+
+
+.crafting {
+    background-image: url('images/crafting.jpg');
+}
+
+.literature {
+    background-image: url('images/literature.jpg');
+}
+
+.reading {
+    background-image: url('images/reading.jpg');
+}
+
+
+.cartooning {
+    background-image: url('images/cartooning.jpg.jpg');
+}
+
+.debating{
+    background-image: url('images/debating.jpg');
+}
+
+.astrology {
+    background-image: url('images/astrology.jpg');
+}
+
+
+.hindi {
+    background-image: url('images/hindi.jpg');
+}
+
+.french {
+    background-image: url('images/french.jpg');
+}
+
+.english {
+    background-image: url('images/english.jpg');
+}
+
+.urdu {
+    background-image: url('images/urdu.jpg');
+}
+
+.other-language {
+    background-image: url('images/other-language.jpg');
+}
+
+.solving-puzzles {
+    background-image: url('images/solving-puzzles.jpg');
+}
+
+.gymnastics {
+    background-image: url('images/gymnastics.jpg');
+}
+
+.yoga {
+    background-image: url('images/yoga.jpg');
+}
+
+.engineering {
+    background-image: url('images/engineering.jpg');
+}
+
+.doctor {
+    background-image: url('images/doctor.jpg');
+}
+
+.pharmacist {
+    background-image: url('images/pharmacist.jpg');
+}
+
+.cycling{
+    background-image: url('images/cycling.jpg');
+}
+
+.knitting {
+    background-image: url('images/knitting.jpg');
+}
+
+.director {
+    background-image: url('images/director.jpg');
+}
+
+.journalism{
+    background-image: url('images/journalism.jpg');
+}
+
+.business {
+    background-image: url('images/business.jpg');
+}
+.listening-to-music {
+    background-image: url('images/listening-to-music.jpg');
+}
+
+
+  
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  
+
+
+
+ 
+
+  
+  
+  
+
+  
+
+
+
+  
+  
